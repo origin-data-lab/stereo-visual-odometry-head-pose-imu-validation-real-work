@@ -1,0 +1,56 @@
+{
+  "note": 21,
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "per-step rotation, vision vs gyroscope",
+      "status": "Verified (automated)",
+      "evidence": [
+        "assets/tables/steps_all.csv",
+        "analysis/vo.py",
+        "analysis/vo_eval.py"
+      ]
+    },
+    {
+      "id": "C2",
+      "claim": "accumulated orientation drift without loop closure",
+      "status": "Verified (automated)",
+      "evidence": [
+        "assets/tables/drift_curve.csv",
+        "analysis/vo_eval.py"
+      ]
+    },
+    {
+      "id": "C3",
+      "claim": "translation scale via acceleration vs accelerometer",
+      "status": "Verified (automated), 0.25–2 Hz band only",
+      "evidence": [
+        "assets/tables/accel_series.csv",
+        "assets/tables/summary_by_clip.csv",
+        "analysis/vo_eval.py"
+      ]
+    },
+    {
+      "id": "C4",
+      "claim": "head path and point cloud figure",
+      "status": "Illustration; translation extent not verified",
+      "evidence": [
+        "analysis/render3d.py",
+        "assets/figures/fn21_trajectory.png"
+      ]
+    }
+  ],
+  "inputs": {
+    "environment": {
+      "python": "3.13.17",
+      "opencv": "4.10.0 (opencv-contrib-python-headless)",
+      "numpy": "2.2.6",
+      "pandas": "3.0.5",
+      "matplotlib": "3.11.2",
+      "os": "Linux x86_64 (CPU only)",
+      "analysis_date": "2026-11-07",
+      "scipy": "1.16"
+    },
+    "recording": "2026-11-02 10:42 chunk 00004 (60–120 s), 2026-11-04 10:49 chunk 00002 (60–120 s), 2026-11-04 09:38 chunk 00002 (120–180 s); device CCC4B2D9B5EA"
+  }
+}

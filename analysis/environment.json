@@ -1,0 +1,10 @@
+{
+ "python": "3.13.17",
+ "opencv": "4.10.0 (opencv-contrib-python-headless)",
+ "numpy": "2.2.6",
+ "pandas": "3.0.5",
+ "matplotlib": "3.11.2",
+ "os": "Linux x86_64 (CPU only)",
+ "analysis_date": "2026-11-07",
+ "scipy": "1.16"
+}
